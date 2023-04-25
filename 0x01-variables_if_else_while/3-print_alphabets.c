@@ -15,11 +15,11 @@ int main(void)
 	{
 		putchar(c);
 	}
-	putchar('\n');
 
 	for (h = 'A'; h <= 'Z'; h++)
 	{
 		putchar(h);
 	}
+	putchar('\n');
 	return (0);
 }

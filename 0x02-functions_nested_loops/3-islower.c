@@ -4,7 +4,7 @@
  * c: the value to be checked
  * Return: void
  */
-int _islower(int c);
+int _islower(int c)
 {
 		if (c == 97 && c <= 122)
 		{

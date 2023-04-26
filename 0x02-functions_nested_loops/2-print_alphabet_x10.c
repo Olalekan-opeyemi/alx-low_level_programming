@@ -1,12 +1,11 @@
 #include "main.h"
-/*
- * print_alphabet_x10 - Entry point.
- * Description: print alphabets in small letters
- * multiple times.
- * Return: 0
- */
-void print_alphabet_x10(void);
 
+/**
+ * print_alphabet_x10 - Make small alphabets x10
+ * Return: void
+ */
+
+void print_alphabet_x10(void)
 {
 	char i;
 	int j = 0;

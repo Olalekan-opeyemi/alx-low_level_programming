@@ -9,6 +9,7 @@
 
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	int unknown = *a;  /*store the unknown value of *a*/
+	*a = *b;	/* *a and *b are equal */
+	*b = unknown;	/* *a's value is overwrirten with that of *b*/
 }

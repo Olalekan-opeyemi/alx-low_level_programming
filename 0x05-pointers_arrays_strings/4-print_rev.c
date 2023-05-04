@@ -8,13 +8,10 @@
 void print_rev(char *s)
 {
 	int p;
-	int v;
-	char rev;
 
-	for (p = 0, v = strlen(s) - 1; p < v; p++, v--)
+	for (p = strlen(s) - 1; p >= 0; p--)
 	{
-		rev = s[p];
-		s[p] = s[v];
-		s[v] = rev;
+		_putchar(s[p]);
 	}
+		_putchar('\n');
 }

@@ -7,9 +7,9 @@
  */
 void _puts(char *str)
 {
-	while (*str != '\O')
+	while (*str != '\O')	/*points to the string as long as the string isn't equal to the last digit /0*/
 	{
-		_putchar(*str++);
-		_putchar('\n');
+		_putchar(*str++);	/*move pointer to next character as far as condition stays true*/
+		_putchar('\n');		/*print a new ling after string has been printed on stdout*/
 	}
 }

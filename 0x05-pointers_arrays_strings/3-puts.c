@@ -10,5 +10,6 @@ void _puts(char *str)
 	while (*str != '\O')
 	{
 		_putchar(*str++);
-		_putchar('\n);
+		_putchar('\n');
+	}
 }

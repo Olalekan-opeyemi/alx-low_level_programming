@@ -4,7 +4,7 @@
  *_memcpy - function that copies memory
  *@dest: where memmory was stores
  *@src: memory to be copied
- @n: number of bytes
+ *@n: number of bytes
  *Return:dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)

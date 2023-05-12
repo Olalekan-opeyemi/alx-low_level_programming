@@ -1,6 +1,7 @@
 #include "main.h"
 
-/**_print_rev_recursion - Write a function that prints the reverse 
+/**
+ *_print_rev_recursion - Write a function that prints the reverse
  * of a string,followed by a new line.
  *
  *@s: the pointer to string.
@@ -11,9 +12,9 @@ void _print_rev_recursion(char *s)
 	{
 	_print_rev_recursion(s + 1);
 				/**
-				 *to move forward to the next
-				*character on the string before it
-                                *gets terminated by \0
+				*to move forward to the next
+				*character on the string till
+				*it gets terminated by \0
 				*/
 	_putchar(*s--);
 	}

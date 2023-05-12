@@ -9,7 +9,7 @@ int factorial(int n)
 {
 	if (n == 0)/*when the value of n = 0,print 0*/
 	{
-		return (0);
+		return (1);
 	}
 	if (n == 1)/*when the value of n = 1,print 1*/
 	{

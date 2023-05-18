@@ -1,5 +1,3 @@
-#include "main.h"
-
 #include <unistd.h>
 /**
  *_putchar - Function
@@ -10,7 +8,8 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
+#include "main.h"
+#include <stdio.h>
 /**
  *main - Entry point
  *@argc: Argument count
@@ -19,14 +18,15 @@ int _putchar(char c)
  */
 int main(int argc __attribute__((unused)), char *argv[])
 {
-	int i;
+	printf("%s\n", argv[0]);
 
-	i = 0;
-	while (argv[0][i] != '\0')
-	{
-		_putchar(argv[0][i]);
-		i++;
-	}
-	_putchar('\n');
+	/*USING PUTCHAR TO PRINT.*/
+	/*while (argv[0][i] != '\0')
+	*{
+	*	_putchar(argv[0][i]);
+	*	i++;
+	*}
+	*_putchar('\n');
+	*/
 	return (0);
 }

@@ -21,14 +21,15 @@ int main(int argc __attribute__((unused)), char *argv[])
 	printf("%s\n", argv[0]);
 
 	/*USING PUTCHAR TO PRINT.*/
-	/*while (argv[0][i] != '\0')
-	*{
-	*	_putchar(argv[0][i]);
-	*	i++;
-	*}
-	*_putchar('\n');
-	*/
-
+	/**
+	 * while (argv[0][i] != '\0')
+	 *
+	 * _putchar(argv[0][i]);
+	 * i++;
+	 * }
+	 * _putchar('\n');
+	 * }
+	 */
 
 	return (0);
 }

@@ -1,19 +1,7 @@
-#include <unistd.h>
-/**
- *_putchar - Function
- *@c: character to print
- *Return: 1
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 #include <stdio.h>
 #include "main.h"
-
 /**
- *main - Entey point
+ *main - Entry point
  *@argc: Argument count
  *@argv: Argument variable
  *Return: always 0

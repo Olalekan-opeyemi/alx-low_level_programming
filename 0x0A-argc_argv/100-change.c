@@ -21,6 +21,7 @@ int main(int argc, char **argv)
 	if (cents < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
 	change += cents / 25;/*
 			* find how many times 25 can go in the value

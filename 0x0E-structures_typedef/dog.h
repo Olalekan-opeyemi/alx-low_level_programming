@@ -1,10 +1,11 @@
-#ifndef DOG
-#define DOG
+#ifndef DOG_H
+#define DOG_H
 /**
  * struct dog - structure name
  * @name: member1
  * @age: member2
  * @owner: member3
+ * dog_t - new name for struct dog
  */
 struct dog
 	{
@@ -19,7 +20,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
 dog_t *new_dog(char *name, float age, char *owner);
-                                                                   void free_dog(dog_t *d)
+                                                                   void free_dog(dog_t *d);
 
-
-endif/*#ifndef DOG*/
+#endif/*#ifndef DOG_H*/

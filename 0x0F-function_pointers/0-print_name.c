@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "function_pointers.h"
 /**
  *print_name - Function that takes any string and any pointer

@@ -11,11 +11,11 @@ typedef struct op
 	int (*f)(int a, int b);
 } op_t;
 
-int op_addition(int a, int b);
-int op_subtraction(int a, int b);
-int op_multiply(int a, int b);
-int op_divide(int a, int b);
-int op_modulus(int a, int b);
+int op_add(int a, int b);
+int op_sub(int a, int b);
+int op_mul(int a, int b);
+int op_div(int a, int b);
+int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
 #endif/*#ifndef CAL_H*/

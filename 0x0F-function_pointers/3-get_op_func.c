@@ -10,17 +10,19 @@
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
-		{"+", op_addition},
-		{"-", op_subtraction},
-		{"*", op_multiply},
-		{"/", op_divide},
-		{"%", op_modulus},
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
 		{NULL, NULL},
 	};
-	int p = 0;
+	int i;
 
-	while (ops[p].op != NULL && *(ops[p].op) != *s)
-	p++;
+	i = 0;
 
-	return (ops[p].f);
+	while (ops[i].op != NULL && *(ops[i].op) != *s)
+	i++;
+
+	return (ops[i].f);
 }

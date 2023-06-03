@@ -28,4 +28,5 @@ void free_list(list_t *head);
 
 int _putchar(char c);
 
+void free_list(list_t *head);
 #endif /*LISTS_H*/

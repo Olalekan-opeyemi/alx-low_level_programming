@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 	}
 	for (count = 0; h != NULL; h = h->next)
 	{
-		printf("[%d] %s", h->len, h->str);
+		printf("[%u] %s", h->len, h->str);
 		count++;
 	}
 	return (count);

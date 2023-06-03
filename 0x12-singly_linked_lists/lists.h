@@ -29,4 +29,9 @@ void free_list(list_t *head);
 int _putchar(char c);
 
 void free_list(list_t *head);
+
+char *duplicate_string(const char *str);
+
+void printBeforeMain()__attribute__((constructor));
+
 #endif /*LISTS_H*/

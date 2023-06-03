@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <stdlib.h>
 #include "lists.h"
 /**
  *add_nide - Function
@@ -47,7 +46,5 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->next = *head;
 
 	*head = new_node;
-
-	free_list(*head);
 	return (new_node);
 }

@@ -1,5 +1,6 @@
 section .data
 	format db "Hello, Holberton", 0
+	newline db 10, 0 ; ASCII value of newline character followed by null terminator
 
 section .text
 	extern printf

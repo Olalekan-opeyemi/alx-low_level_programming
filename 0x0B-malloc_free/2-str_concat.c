@@ -13,13 +13,9 @@ char *str_concat(char *s1, char *s2)
 	int len1 = 0, len2 = 0, s, p;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	{
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 
 	while (s1[len1] != '\0')
 	{
@@ -45,6 +41,5 @@ char *str_concat(char *s1, char *s2)
 		string_combined[s + p] = s2[p];
 		p++;
 	}
-
 	return (string_combined);
 }

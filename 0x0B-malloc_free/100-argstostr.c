@@ -62,6 +62,6 @@ char *argstostr(int ac, char **av)
 		currentSpot += my_strlen(av[s]);
 		concat[currentSpot++] = '\n';
 	}
-	concat[currentSpot] = '\n';
+	concat[currentSpot] = '\0';
 	return (concat);
 }

@@ -17,23 +17,6 @@ size_t my_strlen(const char *str)
 	return (len);
 }
 /**
- *my_strcpy - Function that copies a string
- * @src: holder of string
- * @dest: holder of string
- *Return: dest
- */
-char *my_strcpy(char *dest, const char *src)
-{
-	int s = 0;
-
-	while (src[s] != '\0')
-	{
-	dest[s] = src[s];
-	s++;
-	}
-	return (dest);
-}
-/**
  *argstostr - Function
  *@ac: argument count
  *@av: argument vector
@@ -41,26 +24,32 @@ char *my_strcpy(char *dest, const char *src)
  */
 char *argstostr(int ac, char **av)
 {
-	int totalLenght = 0;
-	int currentSpot = 0, s = 0;
+	size_t totalLenght = 0, currentSpot = 0;
+	int s, p;
 	char *concat;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	/*to find the amount of argument passed*/
-	while (s < ac)
-	{
-		totalLenght = my_strlen(av[s]) + 1;
-		s++;
-	}
-	concat = (char *)malloc(sizeof(char) * (totalLenght + 1));
-	if (concat == NULL)
-		return (NULL);
 	for (s = 0; s < ac; s++)
 	{
-		my_strcpy(concat + currentSpot, av[s]);
-		currentSpot += my_strlen(av[s]);
+		totalLenght = my_strlen(av[s]) + 1;
+	}
+	concat = (char *)malloc(sizeof(char) * (totalLenght + ac));
+
+	if (concat == NULL)
+		return (NULL);
+
+	for (s = 0; s < ac; s++)
+	{
+		for (p = 0; av[s][p] != '\0'; p++)
+	{
+		concat[currentSpot++] = av[s][p];
+	}
+		if (s != ac - 1)
+	{
 		concat[currentSpot++] = '\n';
+	}
 	}
 	concat[currentSpot] = '\0';
 	return (concat);

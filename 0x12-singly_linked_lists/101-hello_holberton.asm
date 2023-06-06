@@ -14,6 +14,11 @@ main:
 	xor eax, eax   ; Clear upper 32 bits of rax
 	call printf
 
+	; Call printf again to print a newline
+	mov rdi, newline
+	xor eax, eax   ; Clear upper 32 bits of rax
+	call printf
+
 	; Clean up and exit
 	add rsp, 8     ; Restore stack
 	xor eax, eax   ; Return 0
